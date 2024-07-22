@@ -1,10 +1,9 @@
 package org.automate.demand.ltc.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Generated;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.util.Date;
 
@@ -13,10 +12,16 @@ import java.util.Date;
 public class BaseEntity {
 
     @Id
-    @Generated
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String createdBy;
+
+    private Long createdBy;
+
+    @CreationTimestamp
     private Date createdDate;
-    private String updatedBy;
+
+    private Long updatedBy;
+
+    @CreationTimestamp
     private Date updatedDate;
 }
