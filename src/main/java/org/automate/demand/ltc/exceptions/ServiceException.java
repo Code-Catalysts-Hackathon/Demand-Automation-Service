@@ -1,4 +1,4 @@
-package org.automate.demand.ltc.exception;
+package org.automate.demand.ltc.exceptions;
 
 public class ServiceException extends RuntimeException{
 }

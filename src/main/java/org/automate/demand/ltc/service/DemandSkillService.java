@@ -2,12 +2,9 @@ package org.automate.demand.ltc.service;
 
 import lombok.AllArgsConstructor;
 import org.automate.demand.ltc.constant.StringConstant;
-import org.automate.demand.ltc.domain.Demand;
 import org.automate.demand.ltc.domain.DemandDto;
-import org.automate.demand.ltc.domain.Student;
 import org.automate.demand.ltc.entity.DemandEntity;
 import org.automate.demand.ltc.entity.DemandSkillEntity;
-import org.automate.demand.ltc.entity.EmployeeEntity;
 import org.automate.demand.ltc.repository.DemandSkillRepository;
 import org.automate.demand.ltc.util.ErrorUtils;
 import org.modelmapper.ModelMapper;
