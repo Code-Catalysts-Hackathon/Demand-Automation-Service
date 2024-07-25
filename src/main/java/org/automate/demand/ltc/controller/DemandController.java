@@ -7,10 +7,13 @@ import org.automate.demand.ltc.domain.DemandDto;
 import org.automate.demand.ltc.domain.DemandResponse;
 import org.automate.demand.ltc.service.DemandService;
 import org.automate.demand.ltc.service.DemandSkillService;
+import org.automate.demand.ltc.service.PubSubPublisherService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 @RestController
 @Slf4j
@@ -22,6 +25,7 @@ public class DemandController {
 
     private final DemandSkillService demandSkillService;
     private final DemandService demandService;
+    private final PubSubPublisherService pubSubPublisherService;
 
     @GetMapping
     public ResponseEntity<DemandResponse> list(){
@@ -40,7 +44,8 @@ public class DemandController {
     }
 
     @PostMapping
-    public ResponseEntity<DemandDto> create(@RequestBody DemandDto demandDto){
+    public ResponseEntity<DemandDto> create(@RequestBody DemandDto demandDto) throws IOException, ExecutionException, InterruptedException {
+        pubSubPublisherService.publishMessage("new demand has been created");
         return ResponseEntity.ok(demandService.add(demandDto));
     }
 
