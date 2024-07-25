@@ -24,4 +24,6 @@ public class BaseEntity {
 
     @CreationTimestamp
     private Date updatedDate;
+
+    private boolean deleted;
 }

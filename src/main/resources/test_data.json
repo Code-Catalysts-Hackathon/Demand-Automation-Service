@@ -206,5 +206,22 @@
       "grade": "E",
       "JobTitle": "Senior Quality Engineer"
     }
+  ],
+
+  "UserRoleEntity": [
+    { "id": 1,
+      "name": "bu_admin"
+    }
+  ],
+
+  "users": [
+    {
+      "name": "Krishna",
+      "email": "Krishna@lbg.com",
+      "userRole" : 1,
+     "businessUnit": 1
+    }
   ]
+
+
 }

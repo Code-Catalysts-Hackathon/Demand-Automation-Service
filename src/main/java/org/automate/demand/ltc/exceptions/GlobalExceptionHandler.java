@@ -1,4 +1,4 @@
-package org.automate.demand.ltc.exception;
+package org.automate.demand.ltc.exceptions;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
