@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DemandRepository extends JpaRepository<DemandEntity, Long> {
+    DemandEntity findByDemandId(String demandId);
 }

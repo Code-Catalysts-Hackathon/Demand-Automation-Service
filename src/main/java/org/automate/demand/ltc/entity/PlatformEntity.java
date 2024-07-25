@@ -17,7 +17,7 @@ import java.util.Set;
 public class PlatformEntity extends  BaseEntity{
 
     private String name;
-    @OneToMany(mappedBy = "platform",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "platform",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private Set<LabEntity> labs;
 
     @ManyToOne(fetch = FetchType.LAZY)

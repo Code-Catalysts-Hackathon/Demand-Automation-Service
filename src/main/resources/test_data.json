@@ -1,0 +1,210 @@
+{
+  "businessUnits": [
+    {
+      "name": "Consumer Lending",
+      "shortCode": "CL",
+      "platforms": [
+        {
+          "name": "Homes",
+          "labs": [
+            {
+              "name": "Intermediates Lab",
+              "teams": [
+                {
+                  "name": "Halifax Acquisition"
+                },
+                {
+                  "name": "Landlord Engagement"
+                },
+                {
+                  "name": "Int Husky Team-3"
+                }
+              ]
+            },
+            {
+              "name": "Direct & Retention Lab",
+              "teams": [
+                {
+                  "name": "MSP Simplification"
+                },
+                {
+                  "name": "DR Husky Team-2"
+                },
+                {
+                  "name": "DR Husky Team-3"
+                }
+              ]
+            },
+            {
+              "name": "Onboarding Lab",
+              "teams": [
+                {
+                  "name": "Avengers"
+                },
+                {
+                  "name": "OB Husky Team-2"
+                },
+                {
+                  "name": "OB Husky Team-3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Risk"
+        },
+        {
+          "name": "Loans"
+        },
+        {
+          "name": "Cards"
+        },
+        {
+          "name": "Transport"
+        }
+      ]
+    },
+    {
+      "name": "Enterprise Data",
+      "shortCode": "ED",
+      "platforms": [
+        {
+          "name": "Master Data"
+        },
+        {
+          "name": "Audit Data"
+        },
+        {
+          "name": "Security Data"
+        },
+        {
+          "name": "Report Data"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "Engineering Head"
+    },
+    {
+      "name": "Engineering Lead"
+    },
+    {
+      "name": "Lead Software Engineer"
+    },
+    {
+      "name": "Software Engineer"
+    },
+    {
+      "name": "Quality Engineer"
+    },
+    {
+      "name": "DevOps Engineer"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Java"
+    },
+    {
+      "name": "Spring Boot"
+    },
+    {
+      "name": "Node"
+    },
+    {
+      "name": "Python"
+    },
+    {
+      "name": "C#"
+    },
+    {
+      "name": "Typescript"
+    },
+    {
+      "name": "Javascript"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "DevOps"
+    },
+    {
+      "name": "Docker"
+    },
+    {
+      "name": "Kubernetes"
+    },
+    {
+      "name": "Jenkins"
+    },
+    {
+      "name": "Azure"
+    },
+    {
+      "name": "GCP"
+    },
+    {
+      "name": "AWS"
+    },
+    {
+      "name": "Selenium"
+    },
+    {
+      "name": "Playwright"
+    }
+  ],
+  "employees": [
+    {
+      "employeeId": "5608247",
+      "name": "Krishna",
+      "email": "Krishna@lbg.com",
+      "mobile": "9966040003",
+      "grade": "F",
+      "JobTitle": "Lead Software Engineer"
+    },
+    {
+      "employeeId": "5608111",
+      "name": "Gautam",
+      "email": "Gautam@lbg.com",
+      "mobile": "9966040111",
+      "grade": "E",
+      "JobTitle": "Senior Software Engineer"
+    },
+    {
+      "employeeId": "5608112",
+      "name": "David",
+      "email": "David@lbg.com",
+      "mobile": "9966040112",
+      "grade": "E",
+      "jobTitle": "Senior Software Engineer"
+    },
+    {
+      "employeeId": "5608113",
+      "name": "Jenny",
+      "email": "Jenny@lbg.com",
+      "mobile": "9966040113",
+      "grade": "D",
+      "jobTitle": "Software Engineer"
+    },
+    {
+      "employeeId": "5608114",
+      "name": "John",
+      "email": "John@Lbg.com",
+      "mobile": "9966040114",
+      "grade": "D",
+      "JobTitle": "Software Engineer"
+    },
+    {
+      "employeeId": "5608115",
+      "name": "Prakash",
+      "email": "Prakash@Lbg.com",
+      "mobile": "9966040114",
+      "grade": "E",
+      "JobTitle": "Senior Quality Engineer"
+    }
+  ]
+}

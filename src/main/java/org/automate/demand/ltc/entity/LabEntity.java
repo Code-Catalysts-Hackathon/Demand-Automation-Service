@@ -15,7 +15,7 @@ import java.util.Set;
 @NoArgsConstructor
 public class LabEntity extends  BaseEntity {
     private String name;
-    @OneToMany(mappedBy = "lab",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "lab",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private Set<TeamEntity> teams;
 
     @ManyToOne(fetch = FetchType.LAZY)

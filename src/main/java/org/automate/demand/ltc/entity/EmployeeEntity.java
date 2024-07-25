@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 public class EmployeeEntity {
     @Id
     @Column(name = "employee_id")
-    private Long employee_id;
+    private Long employeeId;
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "demand_id")

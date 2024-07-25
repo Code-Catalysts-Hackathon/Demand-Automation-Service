@@ -27,4 +27,6 @@ public class DemandSkillEntity {
     @JoinColumn(name = "skill_id")
     private SkillEntity skill;
 
+    private String skillType;
+
 }

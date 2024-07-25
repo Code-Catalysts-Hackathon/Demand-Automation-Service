@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface BusinessUnitRepository extends JpaRepository<BusinessUnitEntity, Long> {
+
+
 }

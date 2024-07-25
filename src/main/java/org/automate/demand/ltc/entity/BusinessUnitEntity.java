@@ -16,6 +16,6 @@ public class BusinessUnitEntity extends BaseEntity{
     private String shortCode;
     private String description;
 
-    @OneToMany(mappedBy = "businessUnit" , fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "businessUnit" , fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private Set<PlatformEntity> platforms;
 }

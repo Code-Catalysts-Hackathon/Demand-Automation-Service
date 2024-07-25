@@ -7,12 +7,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.automate.demand.ltc.domain.DemandStatus;
 import org.automate.demand.ltc.domain.Grade;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
-import org.w3c.dom.Text;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.Set;
 
 @Entity
 @Table(name = "demands")
@@ -46,6 +43,10 @@ public class DemandEntity extends BaseEntity{
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="department_id")
     private DepartmentEntity department;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "manager_id")
+    private EmployeeEntity manager;
 
     private LocalDate demandDate;
 

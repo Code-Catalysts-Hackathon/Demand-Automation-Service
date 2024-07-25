@@ -17,7 +17,7 @@ import java.util.Set;
 public class TeamEntity extends BaseEntity{
 
     private String name;
-    @OneToMany(mappedBy = "team",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "team",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private Set<DemandEntity> demands;
 
     @ManyToOne(fetch = FetchType.LAZY)
